@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:madshop_ui_burkov/data/product.dart';
 import 'package:madshop_ui_burkov/widgets/widget.dart';
 
 class ShopScreen extends StatefulWidget {
@@ -43,7 +44,7 @@ class _ShopScreenState extends State<ShopScreen> {
           ),
         ),
       ),
-      body: ProductCardList(),
+      body: ProductCardList(products: productsData),
       bottomNavigationBar: Container(
         padding: EdgeInsets.only(left: 28, right: 28, bottom: 36, top: 12),
         child: Row(

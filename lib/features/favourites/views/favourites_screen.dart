@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:madshop_ui_burkov/data/product.dart';
 import 'package:madshop_ui_burkov/widgets/widget.dart';
 
 class FavouritesScreen extends StatelessWidget {
@@ -16,7 +17,7 @@ class FavouritesScreen extends StatelessWidget {
           child: Text('Favourites', style: theme.textTheme.titleLarge),
         ),
       ),
-      body: ProductCardList(),
+      body: ProductCardList(products: favouriteProductsData),
       bottomNavigationBar: Container(
         padding: EdgeInsets.only(left: 28, right: 28, bottom: 36, top: 12),
         child: Row(
