@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:madshop_ui_burkov/models/product.dart';
+import 'package:madshop_ui_burkov/theme/colors.dart';
 import 'package:madshop_ui_burkov/widgets/product_image.dart';
 
 class ProductCard extends StatelessWidget {
@@ -31,6 +32,7 @@ class ProductCard extends StatelessWidget {
             fontSize: 17,
             fontWeight: FontWeight.w700,
             letterSpacing: -0.17,
+            color: AppColors.primary,
           ),
         ),
       ],
