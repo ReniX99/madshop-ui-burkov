@@ -17,4 +17,16 @@ final theme = ThemeData(
       ),
     ),
   ),
+  inputDecorationTheme: InputDecorationTheme(
+    contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+    filled: true,
+    fillColor: Color(0xFFF8F8F8),
+    floatingLabelStyle: TextStyle(color: Color(0xFFD2D2D2)),
+    floatingLabelBehavior: FloatingLabelBehavior.never,
+    labelStyle: TextStyle(color: Color(0xFFD2D2D2)),
+    border: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(60),
+      borderSide: BorderSide.none,
+    ),
+  ),
 );
