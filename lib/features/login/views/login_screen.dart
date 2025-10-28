@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:madshop_ui_burkov/features/login/widgets/widget.dart';
+import 'package:madshop_ui_burkov/theme/colors.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -32,7 +33,7 @@ class LoginScreen extends StatelessWidget {
                 Text(
                   'Login',
                   style: GoogleFonts.raleway(
-                    color: const Color(0xFF202020),
+                    color: AppColors.primary,
                     fontSize: 52,
                     fontWeight: FontWeight.w700,
                     letterSpacing: -0.52,
@@ -47,7 +48,7 @@ class LoginScreen extends StatelessWidget {
                       style: GoogleFonts.nunitoSans(
                         fontSize: 19,
                         fontWeight: FontWeight.w300,
-                        color: const Color(0xFF202020),
+                        color: AppColors.primary,
                       ),
                     ),
                     const Icon(Icons.favorite, size: 20),

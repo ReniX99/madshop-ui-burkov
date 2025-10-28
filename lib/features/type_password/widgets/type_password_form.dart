@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:madshop_ui_burkov/theme/colors.dart';
 import 'package:madshop_ui_burkov/widgets/widget.dart';
 
 class TypePasswordForm extends StatelessWidget {
@@ -34,7 +35,7 @@ class TypePasswordForm extends StatelessWidget {
                   style: GoogleFonts.nunitoSans(
                     fontSize: 15,
                     fontWeight: FontWeight.w300,
-                    color: const Color(0xFF202020),
+                    color: AppColors.primary,
                   ),
                 ),
               ),

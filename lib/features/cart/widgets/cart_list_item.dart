@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:madshop_ui_burkov/models/cart_product.dart';
+import 'package:madshop_ui_burkov/theme/colors.dart';
 import 'cart_image.dart';
 
 class CartListItem extends StatelessWidget {
@@ -43,7 +44,7 @@ class CartListItem extends StatelessWidget {
                             style: GoogleFonts.raleway(
                               fontSize: 18,
                               fontWeight: FontWeight.w700,
-                              color: const Color(0xFF202020),
+                              color: AppColors.primary,
                               letterSpacing: -0.18,
                             ),
                           ),

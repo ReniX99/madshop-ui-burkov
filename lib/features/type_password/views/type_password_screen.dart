@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:madshop_ui_burkov/features/type_password/widgets/type_password_form.dart';
+import 'package:madshop_ui_burkov/theme/colors.dart';
 
 class TypePasswordScreen extends StatelessWidget {
   const TypePasswordScreen({super.key});
@@ -30,7 +31,7 @@ class TypePasswordScreen extends StatelessWidget {
                     Text(
                       'Hello!',
                       style: GoogleFonts.raleway(
-                        color: const Color(0xFF202020),
+                        color: AppColors.primary,
                         fontSize: 28,
                         fontWeight: FontWeight.w700,
                         letterSpacing: -0.28,

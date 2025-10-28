@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:madshop_ui_burkov/data/cart_product.dart';
 import 'package:madshop_ui_burkov/features/cart/widgets/widget.dart';
+import 'package:madshop_ui_burkov/theme/colors.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
@@ -71,7 +72,7 @@ class CartScreen extends StatelessWidget {
                       Text(
                         '\$34.00',
                         style: GoogleFonts.raleway(
-                          color: const Color(0xFF202020),
+                          color: AppColors.primary,
                           fontSize: 18,
                           fontWeight: FontWeight.w800,
                           letterSpacing: -0.18,
