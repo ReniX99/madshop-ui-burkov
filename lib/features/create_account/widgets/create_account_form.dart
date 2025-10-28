@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:madshop_ui_burkov/widgets/widget.dart';
 
 class CreateAccountForm extends StatelessWidget {
   const CreateAccountForm({super.key});
@@ -51,23 +52,7 @@ class CreateAccountForm extends StatelessWidget {
           ),
           SizedBox(
             width: double.infinity,
-            child: TextButton(
-              style: TextButton.styleFrom(
-                backgroundColor: Color(0xFF004CFF),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                padding: EdgeInsets.symmetric(vertical: 15),
-              ),
-              onPressed: () {},
-              child: Text(
-                'Done',
-                style: GoogleFonts.nunitoSans(
-                  color: Color(0xFFF3F3F3),
-                  fontSize: 22,
-                ),
-              ),
-            ),
+            child: FormButton(text: 'Login'),
           ),
         ],
       ),
