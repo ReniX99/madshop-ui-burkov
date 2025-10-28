@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:madshop_ui_burkov/widgets/widget.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({super.key});
+
+  void _goToPreviousPage({required BuildContext context}) {
+    context.go('/create-account');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +23,11 @@ class LoginForm extends StatelessWidget {
           Column(
             spacing: 12,
             children: [
-              FormButton(text: 'Login'),
+              FormButton(text: 'Login', route: '/type-password'),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  _goToPreviousPage(context: context);
+                },
                 child: Text(
                   'Cancel',
                   style: GoogleFonts.nunitoSans(

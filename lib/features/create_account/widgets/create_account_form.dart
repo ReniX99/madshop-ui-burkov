@@ -52,7 +52,7 @@ class CreateAccountForm extends StatelessWidget {
           ),
           SizedBox(
             width: double.infinity,
-            child: FormButton(text: 'Login'),
+            child: FormButton(text: 'Done', route: '/login'),
           ),
         ],
       ),

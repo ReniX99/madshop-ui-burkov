@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:madshop_ui_burkov/data/product.dart';
 import 'package:madshop_ui_burkov/widgets/widget.dart';
@@ -12,6 +13,10 @@ class ShopScreen extends StatefulWidget {
 }
 
 class _ShopScreenState extends State<ShopScreen> {
+  void _goToPage({required String route}) {
+    context.go(route);
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -57,7 +62,9 @@ class _ShopScreenState extends State<ShopScreen> {
             ),
 
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                _goToPage(route: '/favourites');
+              },
               icon: SvgPicture.asset(
                 'assets/svg/heart.svg',
                 colorFilter: ColorFilter.mode(
@@ -67,7 +74,9 @@ class _ShopScreenState extends State<ShopScreen> {
               ),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                _goToPage(route: '/cart');
+              },
               icon: SvgPicture.asset(
                 'assets/svg/cart.svg',
                 colorFilter: ColorFilter.mode(

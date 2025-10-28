@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:madshop_ui_burkov/data/product.dart';
 import 'package:madshop_ui_burkov/widgets/widget.dart';
 
 class FavouritesScreen extends StatelessWidget {
   const FavouritesScreen({super.key});
+
+  void _goToPage({required BuildContext context, required String route}) {
+    context.go(route);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +30,9 @@ class FavouritesScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                _goToPage(context: context, route: '/shop');
+              },
               icon: SvgPicture.asset(
                 'assets/svg/home_icon.svg',
                 colorFilter: ColorFilter.mode(
@@ -40,7 +47,9 @@ class FavouritesScreen extends StatelessWidget {
               icon: SvgPicture.asset('assets/svg/underline_heart_icon.svg'),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                _goToPage(context: context, route: '/cart');
+              },
               icon: SvgPicture.asset(
                 'assets/svg/cart.svg',
                 colorFilter: ColorFilter.mode(

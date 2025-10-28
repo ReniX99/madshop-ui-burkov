@@ -21,5 +21,5 @@ final router = GoRouter(
       builder: (context, _) => TypePasswordScreen(),
     ),
   ],
-  initialLocation: '/type-password',
+  initialLocation: '/create-account',
 );

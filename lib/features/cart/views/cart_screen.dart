@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:madshop_ui_burkov/data/cart_product.dart';
 import 'package:madshop_ui_burkov/features/cart/widgets/widget.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
+
+  void _goToPage({required BuildContext context, required String route}) {
+    context.go(route);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -102,7 +107,9 @@ class CartScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                _goToPage(context: context, route: '/shop');
+              },
               icon: SvgPicture.asset(
                 'assets/svg/home_icon.svg',
                 colorFilter: ColorFilter.mode(
@@ -113,7 +120,9 @@ class CartScreen extends StatelessWidget {
             ),
 
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                _goToPage(context: context, route: '/favourites');
+              },
               icon: SvgPicture.asset(
                 'assets/svg/heart.svg',
                 colorFilter: ColorFilter.mode(

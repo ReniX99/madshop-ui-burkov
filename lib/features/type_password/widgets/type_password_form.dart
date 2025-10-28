@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:madshop_ui_burkov/widgets/widget.dart';
 
 class TypePasswordForm extends StatelessWidget {
   const TypePasswordForm({super.key});
+
+  void _goToPreviousPage({required BuildContext context}) {
+    context.go('/login');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +24,11 @@ class TypePasswordForm extends StatelessWidget {
           Column(
             spacing: 12,
             children: [
-              FormButton(text: 'Start'),
+              FormButton(text: 'Start', route: '/shop'),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  _goToPreviousPage(context: context);
+                },
                 child: Text(
                   'Cancel',
                   style: GoogleFonts.nunitoSans(
