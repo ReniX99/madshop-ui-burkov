@@ -14,7 +14,7 @@ class TypePasswordScreen extends StatelessWidget {
           Positioned(child: Image.asset('assets/images/bubble_l_1.png')),
           Positioned(child: Image.asset('assets/images/bubble_l_2.png')),
           Padding(
-            padding: EdgeInsetsGeometry.only(
+            padding: const EdgeInsetsGeometry.only(
               top: 256,
               left: 20,
               right: 20,
@@ -30,7 +30,7 @@ class TypePasswordScreen extends StatelessWidget {
                     Text(
                       'Hello!',
                       style: GoogleFonts.raleway(
-                        color: Color(0xFF202020),
+                        color: const Color(0xFF202020),
                         fontSize: 28,
                         fontWeight: FontWeight.w700,
                         letterSpacing: -0.28,
@@ -45,7 +45,7 @@ class TypePasswordScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                TypePasswordForm(),
+                const TypePasswordForm(),
               ],
             ),
           ),

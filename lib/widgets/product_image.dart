@@ -18,15 +18,15 @@ class ProductImage extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 0.9,
       child: Container(
-        padding: EdgeInsets.all(5),
+        padding: const EdgeInsets.all(5),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(9),
           boxShadow: [
             BoxShadow(
-              offset: Offset(0, 5),
+              offset: const Offset(0, 5),
               blurRadius: 10,
-              color: Color(0x1A000000),
+              color: const Color(0x1A000000),
             ),
           ],
         ),

@@ -9,18 +9,21 @@ import 'package:madshop_ui_burkov/features/type_password/views/type_password_scr
 
 final router = GoRouter(
   routes: [
-    GoRoute(path: '/shop', builder: (context, _) => ShopScreen()),
-    GoRoute(path: '/favourites', builder: (context, _) => FavouritesScreen()),
-    GoRoute(path: '/cart', builder: (context, _) => CartScreen()),
-    GoRoute(path: '/splash', builder: (context, _) => SplashScreen()),
+    GoRoute(path: '/shop', builder: (context, _) => const ShopScreen()),
+    GoRoute(
+      path: '/favourites',
+      builder: (context, _) => const FavouritesScreen(),
+    ),
+    GoRoute(path: '/cart', builder: (context, _) => const CartScreen()),
+    GoRoute(path: '/splash', builder: (context, _) => const SplashScreen()),
     GoRoute(
       path: '/create-account',
-      builder: (context, _) => CreateAccountScreen(),
+      builder: (context, _) => const CreateAccountScreen(),
     ),
-    GoRoute(path: '/login', builder: (context, _) => LoginScreen()),
+    GoRoute(path: '/login', builder: (context, _) => const LoginScreen()),
     GoRoute(
       path: '/type-password',
-      builder: (context, _) => TypePasswordScreen(),
+      builder: (context, _) => const TypePasswordScreen(),
     ),
   ],
   initialLocation: '/splash',

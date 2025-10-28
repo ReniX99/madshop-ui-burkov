@@ -30,17 +30,17 @@ class _ShopScreenState extends State<ShopScreen> {
               Text('Shop', style: theme.textTheme.titleLarge),
               Expanded(
                 child: Container(
-                  margin: EdgeInsets.only(left: 19),
+                  margin: const EdgeInsets.only(left: 19),
                   decoration: BoxDecoration(
-                    color: Color(0xFFE5EBFC),
+                    color: const Color(0xFFE5EBFC),
                     borderRadius: BorderRadius.circular(18),
                   ),
-                  padding: EdgeInsets.only(top: 9, left: 18, bottom: 8),
+                  padding: const EdgeInsets.only(top: 9, left: 18, bottom: 8),
                   child: Text(
                     'Clothing',
                     style: GoogleFonts.raleway(
                       fontSize: 16,
-                      color: Color(0xFF0042E0),
+                      color: const Color(0xFF0042E0),
                     ),
                   ),
                 ),
@@ -51,14 +51,19 @@ class _ShopScreenState extends State<ShopScreen> {
       ),
       body: ProductCardList(products: productsData),
       bottomNavigationBar: Container(
-        padding: EdgeInsets.only(left: 28, right: 28, bottom: 36, top: 12),
+        padding: const EdgeInsets.only(
+          left: 28,
+          right: 28,
+          bottom: 36,
+          top: 12,
+        ),
         decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
-              offset: Offset(0, -1),
+              offset: const Offset(0, -1),
               blurRadius: 1,
               blurStyle: BlurStyle.outer,
-              color: Color(0x29000000),
+              color: const Color(0x29000000),
             ),
           ],
         ),
@@ -78,7 +83,7 @@ class _ShopScreenState extends State<ShopScreen> {
               icon: SvgPicture.asset(
                 'assets/svg/heart.svg',
                 colorFilter: ColorFilter.mode(
-                  Color(0xFF004CFF),
+                  const Color(0xFF004CFF),
                   BlendMode.srcIn,
                 ),
               ),
@@ -90,7 +95,7 @@ class _ShopScreenState extends State<ShopScreen> {
               icon: SvgPicture.asset(
                 'assets/svg/cart.svg',
                 colorFilter: ColorFilter.mode(
-                  Color(0xFF004CFF),
+                  const Color(0xFF004CFF),
                   BlendMode.srcIn,
                 ),
               ),

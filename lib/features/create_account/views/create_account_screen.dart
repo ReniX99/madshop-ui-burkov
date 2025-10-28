@@ -27,7 +27,7 @@ class CreateAccountScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  padding: EdgeInsets.only(left: 30),
+                  padding: const EdgeInsets.only(left: 30),
                   child: Text(
                     'Create Account',
                     style: GoogleFonts.raleway(
@@ -39,7 +39,7 @@ class CreateAccountScreen extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 30),
-                  child: CreateAccountForm(),
+                  child: const CreateAccountForm(),
                 ),
               ],
             ),

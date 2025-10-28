@@ -16,9 +16,9 @@ class CartImage extends StatelessWidget {
         borderRadius: BorderRadius.circular(9),
         boxShadow: [
           BoxShadow(
-            color: Color(0x1A000000),
+            color: const Color(0x1A000000),
             blurRadius: 10,
-            offset: Offset(0, 5),
+            offset: const Offset(0, 5),
           ),
         ],
       ),

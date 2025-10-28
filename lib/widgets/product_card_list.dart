@@ -10,7 +10,7 @@ class ProductCardList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.count(
-      padding: EdgeInsets.only(top: 10, left: 20, right: 20, bottom: 20),
+      padding: const EdgeInsets.only(top: 10, left: 20, right: 20, bottom: 20),
       crossAxisCount: 2,
       mainAxisSpacing: 8,
       crossAxisSpacing: 5,

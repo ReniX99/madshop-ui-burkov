@@ -18,18 +18,21 @@ class FormButton extends StatelessWidget {
       width: double.infinity,
       child: TextButton(
         style: TextButton.styleFrom(
-          backgroundColor: Color(0xFF004CFF),
+          backgroundColor: const Color(0xFF004CFF),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
           ),
-          padding: EdgeInsets.symmetric(vertical: 15),
+          padding: const EdgeInsets.symmetric(vertical: 15),
         ),
         onPressed: () {
           _goToNextPage(context);
         },
         child: Text(
           text,
-          style: GoogleFonts.nunitoSans(color: Color(0xFFF3F3F3), fontSize: 22),
+          style: GoogleFonts.nunitoSans(
+            color: const Color(0xFFF3F3F3),
+            fontSize: 22,
+          ),
         ),
       ),
     );

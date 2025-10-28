@@ -19,15 +19,18 @@ class CartScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Padding(
-          padding: EdgeInsetsGeometry.symmetric(horizontal: 4),
+          padding: const EdgeInsetsGeometry.symmetric(horizontal: 4),
           child: Row(
             spacing: 8,
             children: [
               Text('Cart', style: theme.textTheme.titleLarge),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 10,
+                  vertical: 4,
+                ),
                 decoration: BoxDecoration(
-                  color: Color(0xFFE5EBFC),
+                  color: const Color(0xFFE5EBFC),
                   borderRadius: BorderRadius.circular(100),
                 ),
                 child: Text(
@@ -45,12 +48,12 @@ class CartScreen extends StatelessWidget {
       ),
       body: Stack(
         children: [
-          CartList(),
+          const CartList(),
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-              color: Color(0xFFF5F5F5),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              color: const Color(0xFFF5F5F5),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -68,7 +71,7 @@ class CartScreen extends StatelessWidget {
                       Text(
                         '\$34.00',
                         style: GoogleFonts.raleway(
-                          color: Color(0xFF202020),
+                          color: const Color(0xFF202020),
                           fontSize: 18,
                           fontWeight: FontWeight.w800,
                           letterSpacing: -0.18,
@@ -78,8 +81,8 @@ class CartScreen extends StatelessWidget {
                   ),
                   TextButton(
                     style: TextButton.styleFrom(
-                      fixedSize: Size(128, 40),
-                      backgroundColor: Color(0xFF004CFF),
+                      fixedSize: const Size(128, 40),
+                      backgroundColor: const Color(0xFF004CFF),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
@@ -88,7 +91,7 @@ class CartScreen extends StatelessWidget {
                     child: Text(
                       'Checkout',
                       style: GoogleFonts.nunitoSans(
-                        color: Color(0xFFF3F3F3),
+                        color: const Color(0xFFF3F3F3),
                         fontSize: 16,
                         fontWeight: FontWeight.w300,
                       ),
@@ -101,14 +104,19 @@ class CartScreen extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: Container(
-        padding: EdgeInsets.only(left: 28, right: 28, bottom: 36, top: 12),
+        padding: const EdgeInsets.only(
+          left: 28,
+          right: 28,
+          bottom: 36,
+          top: 12,
+        ),
         decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
-              offset: Offset(0, -1),
+              offset: const Offset(0, -1),
               blurRadius: 1,
               blurStyle: BlurStyle.outer,
-              color: Color(0x29000000),
+              color: const Color(0x29000000),
             ),
           ],
         ),
@@ -123,7 +131,7 @@ class CartScreen extends StatelessWidget {
               icon: SvgPicture.asset(
                 'assets/svg/home_icon.svg',
                 colorFilter: ColorFilter.mode(
-                  Color(0xFF004CFF),
+                  const Color(0xFF004CFF),
                   BlendMode.srcIn,
                 ),
               ),
@@ -136,7 +144,7 @@ class CartScreen extends StatelessWidget {
               icon: SvgPicture.asset(
                 'assets/svg/heart.svg',
                 colorFilter: ColorFilter.mode(
-                  Color(0xFF004CFF),
+                  const Color(0xFF004CFF),
                   BlendMode.srcIn,
                 ),
               ),

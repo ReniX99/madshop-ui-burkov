@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    Timer(Duration(seconds: 1), () => context.go('/create-account'));
+    Timer(const Duration(seconds: 1), () => context.go('/create-account'));
   }
 
   @override
@@ -26,10 +26,10 @@ class _SplashScreenState extends State<SplashScreen> {
           width: 330,
           height: 330,
           decoration: BoxDecoration(
-            color: Color(0xFFFFFFFF),
+            color: const Color(0xFFFFFFFF),
             borderRadius: BorderRadius.circular(1000),
             boxShadow: [
-              BoxShadow(
+              const BoxShadow(
                 offset: Offset(0, 3),
                 blurRadius: 8,
                 color: Color(0x20000000),

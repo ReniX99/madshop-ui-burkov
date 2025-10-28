@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:madshop_ui_burkov/widgets/widget.dart';
 
 class CreateAccountForm extends StatelessWidget {
@@ -16,17 +15,20 @@ class CreateAccountForm extends StatelessWidget {
             children: [
               TextFormField(
                 cursorColor: Colors.black,
-                decoration: InputDecoration(labelText: 'Email'),
+                decoration: const InputDecoration(labelText: 'Email'),
               ),
               TextFormField(
                 cursorColor: Colors.black,
                 obscureText: true,
-                decoration: InputDecoration(labelText: 'Password'),
+                decoration: const InputDecoration(labelText: 'Password'),
               ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 6),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 6,
+                ),
                 decoration: BoxDecoration(
-                  color: Color(0xFFF8F8F8),
+                  color: const Color(0xFFF8F8F8),
                   borderRadius: BorderRadius.circular(60),
                 ),
                 child: Row(
@@ -35,11 +37,15 @@ class CreateAccountForm extends StatelessWidget {
                   children: [
                     Image.asset('assets/images/russian_flag.png'),
 
-                    Container(width: 1, height: 26, color: Color(0xFF1F1F1F)),
+                    Container(
+                      width: 1,
+                      height: 26,
+                      color: const Color(0xFF1F1F1F),
+                    ),
                     Expanded(
                       child: TextFormField(
                         cursorColor: Colors.black,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           contentPadding: EdgeInsets.zero,
                           labelText: 'Your phone',
                         ),
@@ -52,7 +58,7 @@ class CreateAccountForm extends StatelessWidget {
           ),
           SizedBox(
             width: double.infinity,
-            child: FormButton(text: 'Done', route: '/login'),
+            child: const FormButton(text: 'Done', route: '/login'),
           ),
         ],
       ),

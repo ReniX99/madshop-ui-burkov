@@ -18,13 +18,13 @@ class TypePasswordForm extends StatelessWidget {
           TextFormField(
             obscureText: true,
             cursorColor: Colors.black,
-            decoration: InputDecoration(labelText: 'Password'),
+            decoration: const InputDecoration(labelText: 'Password'),
           ),
-          SizedBox(height: 80),
+          const SizedBox(height: 80),
           Column(
             spacing: 12,
             children: [
-              FormButton(text: 'Start', route: '/shop'),
+              const FormButton(text: 'Start', route: '/shop'),
               TextButton(
                 onPressed: () {
                   _goToPreviousPage(context: context);
@@ -34,7 +34,7 @@ class TypePasswordForm extends StatelessWidget {
                   style: GoogleFonts.nunitoSans(
                     fontSize: 15,
                     fontWeight: FontWeight.w300,
-                    color: Color(0xFF202020),
+                    color: const Color(0xFF202020),
                   ),
                 ),
               ),

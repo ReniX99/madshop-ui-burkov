@@ -24,7 +24,7 @@ class LoginScreen extends StatelessWidget {
             child: Image.asset('assets/images/bubble_l_4.png'),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 20, right: 20, bottom: 64),
+            padding: const EdgeInsets.only(left: 20, right: 20, bottom: 64),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,13 +32,13 @@ class LoginScreen extends StatelessWidget {
                 Text(
                   'Login',
                   style: GoogleFonts.raleway(
-                    color: Color(0xFF202020),
+                    color: const Color(0xFF202020),
                     fontSize: 52,
                     fontWeight: FontWeight.w700,
                     letterSpacing: -0.52,
                   ),
                 ),
-                SizedBox(height: 4),
+                const SizedBox(height: 4),
                 Row(
                   spacing: 10,
                   children: [
@@ -47,14 +47,14 @@ class LoginScreen extends StatelessWidget {
                       style: GoogleFonts.nunitoSans(
                         fontSize: 19,
                         fontWeight: FontWeight.w300,
-                        color: Color(0xFF202020),
+                        color: const Color(0xFF202020),
                       ),
                     ),
-                    Icon(Icons.favorite, size: 20),
+                    const Icon(Icons.favorite, size: 20),
                   ],
                 ),
-                SizedBox(height: 24),
-                LoginForm(),
+                const SizedBox(height: 24),
+                const LoginForm(),
               ],
             ),
           ),

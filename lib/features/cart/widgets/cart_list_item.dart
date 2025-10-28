@@ -22,7 +22,7 @@ class CartListItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(cartProduct.name, style: GoogleFonts.nunitoSans()),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Text(
                   '${cartProduct.color}, Size ${cartProduct.size}',
                   style: GoogleFonts.raleway(
@@ -43,7 +43,7 @@ class CartListItem extends StatelessWidget {
                             style: GoogleFonts.raleway(
                               fontSize: 18,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xFF202020),
+                              color: const Color(0xFF202020),
                               letterSpacing: -0.18,
                             ),
                           ),
@@ -58,7 +58,7 @@ class CartListItem extends StatelessWidget {
                                     onPressed: () {},
                                     style: IconButton.styleFrom(
                                       side: BorderSide(
-                                        color: Color(0xFF004BFE),
+                                        color: const Color(0xFF004BFE),
                                         width: 2,
                                       ),
                                     ),
@@ -71,7 +71,7 @@ class CartListItem extends StatelessWidget {
                                   alignment: AlignmentGeometry.center,
                                   width: 40,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFFE5EBFC),
+                                    color: const Color(0xFFE5EBFC),
                                     borderRadius: BorderRadius.circular(7),
                                   ),
                                   child: Text(
@@ -89,7 +89,7 @@ class CartListItem extends StatelessWidget {
                                     onPressed: () {},
                                     style: IconButton.styleFrom(
                                       side: BorderSide(
-                                        color: Color(0xFF004BFE),
+                                        color: const Color(0xFF004BFE),
                                         width: 2,
                                       ),
                                     ),

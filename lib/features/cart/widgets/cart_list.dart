@@ -10,10 +10,10 @@ class CartList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.separated(
       itemCount: cartProductsData.length,
-      padding: EdgeInsets.only(left: 28, right: 28, top: 100, bottom: 40),
+      padding: const EdgeInsets.only(left: 28, right: 28, top: 100, bottom: 40),
       itemBuilder: (context, i) =>
           CartListItem(cartProduct: cartProductsData[i]),
-      separatorBuilder: (context, _) => SizedBox(height: 14),
+      separatorBuilder: (context, _) => const SizedBox(height: 14),
     );
   }
 }

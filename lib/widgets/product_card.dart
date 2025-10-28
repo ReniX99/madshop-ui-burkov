@@ -19,13 +19,13 @@ class ProductCard extends StatelessWidget {
           isLiked: product.isLiked,
           isInCart: product.isInCart,
         ),
-        SizedBox(height: 6),
+        const SizedBox(height: 6),
         Text(
           product.name,
           maxLines: 2,
           style: GoogleFonts.nunitoSans(fontSize: 12),
         ),
-        SizedBox(height: 2),
+        const SizedBox(height: 2),
         Text(
           '\$${product.price.toStringAsFixed(2)}',
           style: GoogleFonts.raleway(

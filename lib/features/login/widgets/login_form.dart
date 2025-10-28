@@ -18,12 +18,12 @@ class LoginForm extends StatelessWidget {
         children: [
           TextFormField(
             cursorColor: Colors.black,
-            decoration: InputDecoration(labelText: 'Email'),
+            decoration: const InputDecoration(labelText: 'Email'),
           ),
           Column(
             spacing: 12,
             children: [
-              FormButton(text: 'Login', route: '/type-password'),
+              const FormButton(text: 'Login', route: '/type-password'),
               TextButton(
                 onPressed: () {
                   _goToPreviousPage(context: context);
@@ -33,7 +33,7 @@ class LoginForm extends StatelessWidget {
                   style: GoogleFonts.nunitoSans(
                     fontSize: 15,
                     fontWeight: FontWeight.w300,
-                    color: Color(0xFF202020),
+                    color: const Color(0xFF202020),
                   ),
                 ),
               ),
