@@ -25,6 +25,16 @@ class FavouritesScreen extends StatelessWidget {
       body: ProductCardList(products: favouriteProductsData),
       bottomNavigationBar: Container(
         padding: EdgeInsets.only(left: 28, right: 28, bottom: 36, top: 12),
+        decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              offset: Offset(0, -1),
+              blurRadius: 1,
+              blurStyle: BlurStyle.outer,
+              color: Color(0x29000000),
+            ),
+          ],
+        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
