@@ -5,15 +5,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:madshop_ui_burkov/data/product.dart';
 import 'package:madshop_ui_burkov/widgets/widget.dart';
 
-class ShopScreen extends StatefulWidget {
+class ShopScreen extends StatelessWidget {
   const ShopScreen({super.key});
 
-  @override
-  State<StatefulWidget> createState() => _ShopScreenState();
-}
-
-class _ShopScreenState extends State<ShopScreen> {
-  void _goToPage({required String route}) {
+  void _goToPage({required BuildContext context, required String route}) {
     context.go(route);
   }
 
@@ -78,7 +73,7 @@ class _ShopScreenState extends State<ShopScreen> {
 
             IconButton(
               onPressed: () {
-                _goToPage(route: '/favourites');
+                _goToPage(context: context, route: '/favourites');
               },
               icon: SvgPicture.asset(
                 'assets/svg/heart.svg',
@@ -90,7 +85,7 @@ class _ShopScreenState extends State<ShopScreen> {
             ),
             IconButton(
               onPressed: () {
-                _goToPage(route: '/cart');
+                _goToPage(context: context, route: '/cart');
               },
               icon: SvgPicture.asset(
                 'assets/svg/cart.svg',
