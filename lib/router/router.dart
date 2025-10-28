@@ -4,6 +4,7 @@ import 'package:madshop_ui_burkov/features/create_account/create_account.dart';
 import 'package:madshop_ui_burkov/features/favourites/views/view.dart';
 import 'package:madshop_ui_burkov/features/login/login.dart';
 import 'package:madshop_ui_burkov/features/shop/shop.dart';
+import 'package:madshop_ui_burkov/features/type_password/views/type_password_screen.dart';
 
 final router = GoRouter(
   routes: [
@@ -15,6 +16,10 @@ final router = GoRouter(
       builder: (context, _) => CreateAccountScreen(),
     ),
     GoRoute(path: '/login', builder: (context, _) => LoginScreen()),
+    GoRoute(
+      path: '/type-password',
+      builder: (context, _) => TypePasswordScreen(),
+    ),
   ],
-  initialLocation: '/login',
+  initialLocation: '/type-password',
 );
