@@ -38,7 +38,63 @@ class CartScreen extends StatelessWidget {
           ),
         ),
       ),
-      body: CartList(),
+      body: Stack(
+        children: [
+          CartList(),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              color: Color(0xFFF5F5F5),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    spacing: 8,
+                    children: [
+                      Text(
+                        'Total',
+                        style: GoogleFonts.raleway(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: -0.2,
+                        ),
+                      ),
+                      Text(
+                        '\$34.00',
+                        style: GoogleFonts.raleway(
+                          color: Color(0xFF202020),
+                          fontSize: 18,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: -0.18,
+                        ),
+                      ),
+                    ],
+                  ),
+                  TextButton(
+                    style: TextButton.styleFrom(
+                      fixedSize: Size(128, 40),
+                      backgroundColor: Color(0xFF004CFF),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                    ),
+                    onPressed: () {},
+                    child: Text(
+                      'Checkout',
+                      style: GoogleFonts.nunitoSans(
+                        color: Color(0xFFF3F3F3),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w300,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
       bottomNavigationBar: Container(
         padding: EdgeInsets.only(left: 28, right: 28, bottom: 36, top: 12),
         child: Row(
